@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Listagem de Contatos Cadastrados";
+}
+
+<div class="text-center">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar Novo Contato</a>
+    </div>
+    <br />
+
+    <h1 class="display-4">Listagem de Contatos Cadastrados</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Estado Civil</th>
+                <th scope="col">Cpf</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Estado</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Laender</td>
+                <td>31</td>
+                <td>Solteiro</td>
+                <td>1996315788</td>
+                <td>Rio de Janeiro</td>
+                <td>Rio de Janeiro</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+                <th scope="row">1</th>
+                <td>Lucas</td>
+                <td>11</td>
+                <td>Solteiro</td>
+                <td>1996315456</td>
+                <td>Rio de Janeiro</td>
+                <td>Rio de Janeiro</td>
+             <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                    </div>
+            </td>
+        </tr>
+        <tr>
+                <th scope="row">1</th>
+                <td>Luiza</td>
+                <td>22</td>
+                <td>Solteiro</td>
+                <td>1996315789</td>
+                <td>Rio de Janeiro</td>
+                <td>Rio de Janeiro</td>
+                <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                    </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>Larissa</td>
+            <td>28</td>
+            <td>Solteiro</td>
+            <td>1996315788</td>
+            <td>Rio de Janeiro</td>
+            <td>Rio de Janeiro</td>
+            <td>
+                <div class="btn-group" role="group">
+                     <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                     <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                    </div>
+            </td>
+        </tr>
+         </tbody>
+    </table>
